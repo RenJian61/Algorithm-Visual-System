@@ -85,4 +85,56 @@ const route = useRoute()
   background: #ddf4ff;
   font-weight: 500;
 }
+
+@media (max-width: 900px) {
+  .header-inner {
+    padding: 0 16px;
+  }
+
+  .nav-link {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 640px) {
+  .header-inner {
+    flex-direction: column;
+    align-items: stretch;
+    height: auto;
+    padding: 12px 16px;
+    gap: 10px;
+  }
+
+  .logo {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px;
+  }
+
+  .nav-link {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-inner {
+    padding: 10px 12px;
+  }
+
+  .nav {
+    gap: 4px;
+  }
+
+  .nav-link {
+    padding: 5px 8px;
+    font-size: 11px;
+  }
+}
 </style>

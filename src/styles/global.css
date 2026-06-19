@@ -145,3 +145,34 @@ select:focus {
 .tag.idle {
   color: var(--color-text-muted);
 }
+
+/* ── 响应式断点：平板 / 手机 ── */
+
+@media (max-width: 768px) {
+  html {
+    font-size: 13px;
+  }
+
+  button {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+
+  input,
+  textarea,
+  select {
+    padding: 7px 9px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 12px;
+  }
+
+  button {
+    padding: 5px 10px;
+    font-size: 11px;
+  }
+}

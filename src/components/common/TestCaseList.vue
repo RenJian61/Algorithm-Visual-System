@@ -87,4 +87,16 @@ defineEmits(['select'])
   width: 100%;
   font-size: 12px;
 }
+
+@media (max-width: 480px) {
+  .test-cases {
+    padding: 12px;
+    margin-top: 12px;
+  }
+
+  .case-list {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}
 </style>

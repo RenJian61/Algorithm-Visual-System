@@ -219,5 +219,74 @@ defineEmits([
   .workspace {
     grid-template-columns: 1fr;
   }
+
+  .right-col {
+    max-height: none;
+  }
+
+  .center-col {
+    min-height: 360px;
+  }
+}
+
+@media (max-width: 768px) {
+  .algorithm-page {
+    padding: 16px 16px 32px;
+  }
+
+  .title-block h1 {
+    font-size: 18px;
+  }
+
+  .center-col {
+    min-height: 280px;
+  }
+
+  .viz-area {
+    min-height: 200px;
+    padding: 12px;
+  }
+
+  .step-table-wrap {
+    max-height: 140px;
+  }
+
+  .step-table th,
+  .step-table td {
+    padding: 6px 8px;
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 480px) {
+  .algorithm-page {
+    padding: 12px 12px 24px;
+  }
+
+  .page-header {
+    margin-bottom: 14px;
+  }
+
+  .title-block {
+    gap: 6px;
+  }
+
+  .title-block h1 {
+    font-size: 16px;
+    width: 100%;
+  }
+
+  .workspace {
+    gap: 12px;
+  }
+
+  .viz-header {
+    padding: 10px 12px;
+    font-size: 12px;
+  }
+
+  .step-table-wrap {
+    max-height: 120px;
+  }
 }
 </style>

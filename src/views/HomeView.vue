@@ -27,11 +27,18 @@
         <span class="enter">进入可视化 →</span>
       </router-link>
     </section>
+
+    <section class="team-strip" aria-label="项目小组成员">
+      <p class="team-line">{{ teamLine }}</p>
+    </section>
   </div>
 </template>
 
 <script setup>
 import algorithms from '@/data/algorithms.json'
+import { formatTeamInline } from '@/data/siteMeta.js'
+
+const teamLine = formatTeamInline()
 </script>
 
 <style scoped>
@@ -126,5 +133,75 @@ import algorithms from '@/data/algorithms.json'
   font-size: 13px;
   color: var(--color-accent);
   font-weight: 500;
+}
+
+.team-strip {
+  margin-top: 48px;
+  padding-top: 24px;
+  text-align: center;
+  border-top: 1px solid var(--color-border);
+}
+
+.team-line {
+  margin: 0;
+  font-size: 12px;
+  color: var(--color-text-muted);
+  letter-spacing: 0.02em;
+  line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+  .home {
+    padding: 32px 16px 48px;
+  }
+
+  .hero {
+    margin-bottom: 32px;
+  }
+
+  .hero h1 {
+    font-size: 22px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .team-strip {
+    margin-top: 36px;
+    padding-top: 20px;
+  }
+
+  .team-line {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home {
+    padding: 24px 12px 40px;
+  }
+
+  .hero h1 {
+    font-size: 20px;
+  }
+
+  .subtitle {
+    font-size: 13px;
+  }
+
+  .algo-card {
+    padding: 16px;
+  }
+
+  .team-line {
+    font-size: 10px;
+    line-height: 2;
+  }
 }
 </style>

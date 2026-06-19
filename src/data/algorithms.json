@@ -1,0 +1,32 @@
+[
+  {
+    "id": "quick-sort",
+    "name": "快速排序",
+    "category": "排序",
+    "difficulty": "低-中",
+    "timeComplexity": "O(n log n) 平均 / O(n²) 最坏",
+    "spaceComplexity": "O(log n)",
+    "description": "选取基准元素，将数组分区后递归排序左右子区间，是分治思想的典型应用。",
+    "route": "/quick-sort"
+  },
+  {
+    "id": "dijkstra",
+    "name": "Dijkstra 最短路径",
+    "category": "图算法",
+    "difficulty": "中",
+    "timeComplexity": "O(V²) 或 O(E log V)",
+    "spaceComplexity": "O(V)",
+    "description": "单源最短路径算法，每次选取当前距离最小的未访问节点，对其邻边进行松弛。",
+    "route": "/dijkstra"
+  },
+  {
+    "id": "hanoi",
+    "name": "汉诺塔",
+    "category": "递归",
+    "difficulty": "中-高",
+    "timeComplexity": "O(2ⁿ)",
+    "spaceComplexity": "O(n)",
+    "description": "经典递归问题：将 n 个盘子从源柱借助辅助柱移到目标柱，每次移动一个且大盘不能压小盘。",
+    "route": "/hanoi"
+  }
+]

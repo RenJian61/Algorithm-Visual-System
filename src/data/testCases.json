@@ -1,0 +1,73 @@
+[
+  {
+    "id": "TC-S-01",
+    "algorithmId": "quick-sort",
+    "name": "普通无序数组",
+    "description": "验证基本分区与排序正确性",
+    "input": { "array": [64, 34, 25, 12, 22, 11, 90] },
+    "expected": { "sorted": [11, 12, 22, 25, 34, 64, 90] }
+  },
+  {
+    "id": "TC-S-02",
+    "algorithmId": "quick-sort",
+    "name": "含重复元素数组",
+    "description": "验证重复元素处理正确",
+    "input": { "array": [3, 1, 4, 1, 5, 9, 2, 6, 5] },
+    "expected": { "sorted": [1, 1, 2, 3, 4, 5, 5, 6, 9] }
+  },
+  {
+    "id": "TC-G-01",
+    "algorithmId": "dijkstra",
+    "name": "小型无向加权图",
+    "description": "5 节点 7 条边，源点 0 目标点 4",
+    "input": {
+      "nodes": 5,
+      "edges": [
+        { "from": 0, "to": 1, "weight": 4 },
+        { "from": 0, "to": 2, "weight": 2 },
+        { "from": 1, "to": 2, "weight": 1 },
+        { "from": 1, "to": 3, "weight": 5 },
+        { "from": 2, "to": 3, "weight": 8 },
+        { "from": 2, "to": 4, "weight": 10 },
+        { "from": 3, "to": 4, "weight": 2 }
+      ],
+      "source": 0,
+      "target": 4,
+      "directed": false
+    },
+    "expected": { "distance": 10, "reachable": true }
+  },
+  {
+    "id": "TC-G-02",
+    "algorithmId": "dijkstra",
+    "name": "不可达目标",
+    "description": "两连通分量，源点与目标不连通",
+    "input": {
+      "nodes": 4,
+      "edges": [
+        { "from": 0, "to": 1, "weight": 3 },
+        { "from": 2, "to": 3, "weight": 2 }
+      ],
+      "source": 0,
+      "target": 3,
+      "directed": false
+    },
+    "expected": { "reachable": false }
+  },
+  {
+    "id": "TC-H-01",
+    "algorithmId": "hanoi",
+    "name": "3 盘经典用例",
+    "description": "n=3，共 7 步",
+    "input": { "disks": 3 },
+    "expected": { "totalMoves": 7 }
+  },
+  {
+    "id": "TC-H-02",
+    "algorithmId": "hanoi",
+    "name": "4 盘用例",
+    "description": "n=4，共 15 步",
+    "input": { "disks": 4 },
+    "expected": { "totalMoves": 15 }
+  }
+]
